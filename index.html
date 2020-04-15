@@ -30,39 +30,40 @@ Time - 7:12 PM
             </div>
             <div class="keypad">
                 <div>
-                    <input type="button" value="C" class="btn">
+                    <input type="button" value="C" class="btn" onclick="clearNumber()">
                     <input type="button" value="+/-" class="btn">
-                    <input type="button" value="%" class="btn">
-                    <input type="button" value="/" class="btn btn-style">
+                    <input type="button" value="%" class="btn" onclick="showNumber('%')">
+                    <input type="button" value="/" class="btn btn-style" onclick="showNumber('/')">
                 </div>
                 <div>
-                    <input type="button" value="7" class="btn">
-                    <input type="button" value="8" class="btn">
-                    <input type="button" value="9" class="btn">
-                    <input type="button" value="X" class="btn btn-style">
+                    <input type="button" value="7" class="btn" onclick="showNumber(7)">
+                    <input type="button" value="8" class="btn" onclick="showNumber(8)">
+                    <input type="button" value="9" class="btn" onclick="showNumber(9)">
+                    <input type="button" value="X" class="btn btn-style" onclick="showNumber('*')">
                 </div>
                 <div>
-                    <input type="button" value="4" class="btn">
-                    <input type="button" value="5" class="btn">
-                    <input type="button" value="6" class="btn">
-                    <input type="button" value="-" class="btn btn-style">
+                    <input type="button" value="4" class="btn" onclick="showNumber(4)">
+                    <input type="button" value="5" class="btn" onclick="showNumber(5)">
+                    <input type="button" value="6" class="btn" onclick="showNumber(6)">
+                    <input type="button" value="-" class="btn btn-style" onclick="showNumber('-')"> 
                 </div>
                 <div>
-                    <input type="button" value="1" class="btn">
-                    <input type="button" value="2" class="btn">
-                    <input type="button" value="3" class="btn">
-                    <input type="button" value="+" class="btn btn-style">
+                    <input type="button" value="1" class="btn" onclick="showNumber(1)">
+                    <input type="button" value="2" class="btn" onclick="showNumber(2)">
+                    <input type="button" value="3" class="btn" onclick="showNumber(3)">
+                    <input type="button" value="+" class="btn btn-style" onclick="showNumber('+')">
                 </div>
                 <div>
-                    <input type="button" value="0" class="btn">
-                    <input type="button" value="." class="btn">
-                    <input type="button" value="DEL" class="btn">
-                    <input type="button" value="=" class="btn btn-equal">
+                    <input type="button" value="0" class="btn" onclick="showNumber(0)">
+                    <input type="button" value="." class="btn" onclick="showNumber('.')">
+                    <input type="button" value="DEL" class="btn" onclick="deleteNumber()">
+                    <input type="button" value="=" class="btn btn-equal" onclick="calculate()">
                 </div>
             </div>
         </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
